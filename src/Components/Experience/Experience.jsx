@@ -6,11 +6,11 @@ const Experience = () => {
   return (
     <section id='experience'>
       <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>My Skills/Experience</h2>
 
       <div className='container experience__container'>
         <div className="experience__tecnical">
-            <h3> TechnicalSkills</h3>
+            <h3> Technical Skills</h3>
             <div className="experience__content">
               <article className='experience__details'>
                 <AiOutlineCheckCircle className='experience__details-icon'/>
@@ -43,12 +43,12 @@ const Experience = () => {
                   <small className='text-light'>Experienced</small>
                 </div>
               </article>
-
+              {/*
               <article className='experience__details'>
                 <AiOutlineCheckCircle className='experience__details-icon'/>
                 <div>
                   <h4>R</h4>
-                  <small className='text-light'>Beginer</small>
+                  <small className='text-light'>Beginner</small>
                 </div>
               </article>
 
@@ -56,15 +56,15 @@ const Experience = () => {
                 <AiOutlineCheckCircle className='experience__details-icon'/>
                 <div>
                   <h4>C++</h4>
-                  <small className='text-light'>Beginer</small>
+                  <small className='text-light'>Beginner</small>
                 </div>
-              </article>
+  </article>*/}
 
               <article className='experience__details'>
                 <AiOutlineCheckCircle className='experience__details-icon'/>
                 <div>
                   <h4>C</h4>
-                  <small className='text-light'>Beginer</small>
+                  <small className='text-light'>Beginner</small>
                 </div>
               </article>
 
@@ -72,7 +72,7 @@ const Experience = () => {
                 <AiOutlineCheckCircle className='experience__details-icon'/>
                 <div>
                   <h4>HTML & CSS</h4>
-                  <small className='text-light'>Beginer</small>
+                  <small className='text-light'>Beginner</small>
                 </div>
               </article>
             </div>
@@ -80,7 +80,7 @@ const Experience = () => {
 
 
         <div className='experience__otherskills'>
-          <h3>OtherSkills</h3>
+          <h3>Other Skills</h3>
               <div className="experience__content2">
                 <article className='experience__details'>
                   <AiOutlineCheckCircle className='experience__details-icon'/>
@@ -94,7 +94,7 @@ const Experience = () => {
                   <AiOutlineCheckCircle className='experience__details-icon'/>
                   <div>
                    <h4>3D Modelling</h4>
-                   <small className='text-light'>Beginer</small>
+                   <small className='text-light'>Beginner</small>
                   </div>
                 </article>
 
@@ -102,9 +102,18 @@ const Experience = () => {
                   <AiOutlineCheckCircle className='experience__details-icon'/>
                   <div>
                     <h4>3D Animation</h4>
-                    <small className='text-light'>Beginer</small>
+                    <small className='text-light'>Beginner</small>
                   </div>
                 </article>
+
+                <article className='experience__details'>
+                  <AiOutlineCheckCircle className='experience__details-icon'/>
+                  <div>
+                    <h4>Blender</h4>
+                    <small className='text-light'>Beginner</small>
+                  </div>
+                </article>
+
                 </div>
               </div>
 

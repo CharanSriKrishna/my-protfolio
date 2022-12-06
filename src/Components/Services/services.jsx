@@ -19,7 +19,7 @@ const services = () => {
           <ul className='service__list'>
             <li> 
               <BsCheck className='service__list-icon'/>
-              <p>Have experience in Python, Java, C++</p>
+              <p>Have experience in Python, Java, C</p>
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
@@ -78,7 +78,7 @@ const services = () => {
           <ul className='service__list'>
             <li> 
               <BsCheck className='service__list-icon'/>
-              <p>I can do 2D artworks</p>
+              <p>Experiance with 2D artworks</p>
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
@@ -86,7 +86,7 @@ const services = () => {
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
-              <p>I can do 3D models</p>
+              <p>Have experiance with blender</p>
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
@@ -94,16 +94,16 @@ const services = () => {
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
-              <p>Create Logos </p>
+              <p>Make 3D objects with blender</p>
             </li>
             <li> 
               <BsCheck className='service__list-icon'/>
-              <p>Make Character Design</p>
+              <p>Design 2D Character</p>
             </li>
           </ul>
         </article>
 
-        <article className='service'>
+        {/*<article className='service'>
           <div className="service__head">
             <h3>Game Development</h3>
           </div>
@@ -130,7 +130,7 @@ const services = () => {
               <p>Can make 3D objects</p>
             </li>
           </ul>
-        </article>
+  </article>*/}
 
       </div>
     </section>

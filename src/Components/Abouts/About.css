@@ -1,8 +1,8 @@
 .about__container{
     display: grid;
     align-items: center;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 30% 45%;
+    gap: 25%;
 }
 
 .about__me{
@@ -31,7 +31,7 @@
 
 .about__cards{
     display: grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(2,2fr);
     gap: 2rem;
 }
 

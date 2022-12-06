@@ -21,28 +21,31 @@ const about = () => {
         <div className='about__content'>
           <div className='about__cards'>
 
-            <article className='about__card'>
+            {/*<article className='about__card'>
               <BiAward className='about__icon'/>
               <h5>Experience</h5>
               <small>One Month Internship</small>
-            </article>
+  </article>*/}
 
             <article className='about__card'>
               <AiOutlineFolder className='about__icon'/>
-              <h5>projects</h5>
-              <small>5+ Projects</small>
+              <a href="#portfolio">
+                <h5>Projects</h5>
+                <small>5+ Projects</small>
+              </a>
             </article>
 
             <article className='about__card'>
               <BsPencil className='about__icon'/>
-              <h5>ArtWorks</h5>
-              <small>Many Designs and Models</small>
+              <a href="#portfolio">
+                <h5>ArtWorks</h5>
+                <small>Many Designs and 3D Models</small>
+              </a>
             </article>
 
           </div>
           <p>
-          Confident and reliable computer science student who is eager to learn 
-          current trends and to help create meaningful projects to help community.
+          Hey! I am a developer, who is passionate about Artificial intelligence and i love to develop, work and learn about AI technologies. Digital art and 3D modelling also has my attention . I also like to code, design and develop new things
           </p>
 
           <a href='#contacts' className='btn btn-primary'>Let's Talk</a>
