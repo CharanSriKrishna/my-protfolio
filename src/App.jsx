@@ -7,7 +7,7 @@ import Experience from './Components/Experience/Experience'
 import Portfolios from './Components/portfolio/portfolio'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
-import Testimonials from './Components/testimonial/testimonial'
+import Certificates from './Components/Certificates/Certificates'
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Services />
         <Experience />
         <Portfolios />
-        {/*<Testimonials />*/}
+        <Certificates />
         <Contacts />
         <Footer />
         

@@ -71,6 +71,14 @@ const Experience = () => {
               <article className='experience__details'>
                 <AiOutlineCheckCircle className='experience__details-icon'/>
                 <div>
+                  <h4>R</h4>
+                  <small className='text-light'>Beginner</small>
+                </div>
+              </article>
+
+              <article className='experience__details'>
+                <AiOutlineCheckCircle className='experience__details-icon'/>
+                <div>
                   <h4>HTML & CSS</h4>
                   <small className='text-light'>Beginner</small>
                 </div>

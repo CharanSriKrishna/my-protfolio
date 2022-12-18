@@ -4,20 +4,28 @@ import ME from '../../assests/charan1.jpg'
 import {BiAward} from 'react-icons/bi'
 import {BsPencil} from 'react-icons/bs'
 import {AiOutlineFolder} from 'react-icons/ai'
+import { motion } from 'framer-motion';
 
 const about = () => {
   return (
     <section id='about'>
+
       <h5>Get To Know</h5>
       <h2>About Me</h2>
-
-      <div className='container about__container'>
+      <motion.div
+        whileInView={{ y: [150, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+        className='container about__container'
+        >
         <div className='about__me'>
           <div className='about__me-image'>
             <img src={ME} alt='about image'/>
           </div>
         </div>
-
+        <motion.div
+        whileInView={{ y: [150, 0], opacity: [0, 1] }}
+        transition={{ duration: 2 }}
+        >
         <div className='about__content'>
           <div className='about__cards'>
 
@@ -44,14 +52,20 @@ const about = () => {
             </article>
 
           </div>
-          <p>
-          Hey! I am a developer, who is passionate about Artificial intelligence and i love to develop, work and learn about AI technologies. Digital art and 3D modelling also has my attention . I also like to code, design and develop new things
-          </p>
+          <motion.div
+            whileInView={{ y: [150, 0], opacity: [0, 1] }}
+            transition={{ duration: 2 }}
+            >
+            <p>
+              Hey! I am a developer, who is passionate about Artificial intelligence and i love to develop, work and learn about AI technologies. Digital art and 3D modelling also has my attention . I also like to code, design and develop new things
+            </p>
 
-          <a href='#contacts' className='btn btn-primary'>Let's Talk</a>
-        </div>
-        
-      </div>
+            <a href='#contacts' className='btn btn-primary'>Let's Talk</a>
+          </motion.div>
+          </div>
+          
+          </motion.div>
+          </motion.div>
     </section>
   )
 }

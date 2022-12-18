@@ -1,4 +1,5 @@
 .about__container{
+    height:80vh;
     display: grid;
     align-items: center;
     grid-template-columns: 30% 45%;
