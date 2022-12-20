@@ -1,7 +1,7 @@
 .experience__container{
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr;
-    gap:2rem
+    gap:2rem;
 }
 
 .experience__container > div{
@@ -48,9 +48,15 @@
     color: var(--color-primary);
 }
 
+@media screen and (max-width:1500px) {
+    .experience__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media screen and (max-width:1024px) {
     .experience__container{
         grid-template-columns: 1fr;
+
 
     }
     .experience__container > div{
@@ -70,6 +76,7 @@
 @media screen and (max-width:600px) {
     .experience__container{
         gap: 1rem;
+        
 
     }
     .experience__container > div{

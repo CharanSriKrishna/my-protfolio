@@ -78,6 +78,7 @@
     .about__container{
         grid-template-columns: 1fr;
         gap: 2rem;
+        height: 80%;
     }
 
     .about__me{
