@@ -15,6 +15,7 @@ const  HeaderSocials= () => {
         <a href="https://leetcode.com/charansri795/" target="_blank">Leetcode</a>
         <a href="https://github.com/CharanSriKrishna" target="_blank">Github</a>
         <a href="https://charansri8.artstation.com/" target="_blank">ArtStation</a>
+        <a href='https://www.kaggle.com/charansri795' target="_blank">Kaggle</a>
       </motion.div>
 
   )

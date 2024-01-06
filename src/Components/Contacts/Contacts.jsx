@@ -26,21 +26,21 @@ const Contacts = () => {
               <MdOutlineEmail className='contact__option-icon'/>
               <h4>Email</h4>
               <h5>Charansri795@gmail.com</h5>
-              <a href="mailto:Charansri795@gmail.com" target="_blank">Send a message</a>
+              <a class ='bts2' href="mailto:Charansri795@gmail.com" target="_blank">Send a message</a>
             </article>
 
             <article className="contact__option">
               <BsWhatsapp className='contact__option-icon'/>
               <h4>Whatsapp</h4>
               <h5>+91 70941 61716</h5>
-              <a href="https://wa.me/+917094161716"  target="_blank">Send a message</a>
+              <a class ='bts2' href="https://wa.me/+917094161716"  target="_blank">Send a message</a>
             </article>
 
             <article className="contact__option">
               <AiOutlineInstagram className='contact__option-icon'/>
               <h4>Instagram</h4>
               <h5>Charan_.sri_</h5>
-              <a href=" https://ig.me/m/charan_.sri_"  target="_blank">Send a message</a>
+              <a class ='bts2'  href=" https://ig.me/m/charan_.sri_"  target="_blank">Send a message</a>
             </article>
 
         </div>
