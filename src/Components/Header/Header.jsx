@@ -2,7 +2,7 @@
 import React from 'react'
 import './Header.css'
 import CTA from './cta'
-import ME from '../../assests/charan3.JPG'
+import ME from '../../assests/charan3.jpg'
 import HeaderSocials from './headersocials'
 import { motion } from 'framer-motion';
 
