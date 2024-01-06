@@ -48,7 +48,7 @@ const Portfolio = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map(({id,image,title,Github,demo}) => (
+        {filterWork.map(({id,image,title,Github,btn_name}) => (
             <div className="app__work-item app__flex" key={id}>
                 <div className="app__work-img app__flex">
                     <img src={image} alt={title} />
@@ -57,8 +57,7 @@ const Portfolio = () => {
                 <div className="app__work-content app__flex">
                     <h4 className="bold-text">{title}</h4>
                     <div className="protfolio__item-cta">
-                        <a className="btn2" href={Github} target='_blank'>Github</a>
-                        <a className="btn2" href={demo}  target='_blank'>Images</a>
+                        <a className="btn2" href={Github} target='_blank'>{btn_name}</a>
                     </div>
                 </div>
               </div>

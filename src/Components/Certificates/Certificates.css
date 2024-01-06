@@ -1,94 +1,58 @@
+.app__work-portfolios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 300px; /* Set a fixed height for the Swiper container */
+}
+
+.app__work-items {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Set a fixed height for each certificate */
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  opacity: 1;
+ 
+}
+
+
 
 .app__work-imgs {
-    width: 100%;
-    height: 100%;
-  
-    position: relative;
-}  
+  position: relative;
+  height: 100%; /* Set a fixed height for each certificate image container */
+}
 
 .app__work-imgs img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
-  }
-
-  @media screen and (min-width: 2000px) {
-    .app__work-imgs img {
-        height: 350px;
-  }
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
 }
 
 
 
 .app__work-hovers {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 29, 29, 0.726);
-    justify-items: center;
-    border-radius: 0.5rem;
-    opacity: 10;
-    transition: 0.6s ease-in-out;
-}
-.app__work-hovers:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.726);
+  border-radius: 0.5rem;
   opacity: 0;
-}
-.app__work-hovers   div {
-      padding: 2rem;
-      justify-content: center;
-      background-color: rgb(31, 31, 31);
-      color: #fff;
-      margin: 1rem;
-
-      font-weight: 800;
-      cursor: pointer;
-      transition: 0.6s ease-in-out;
-}
-.app__work-hovers   div:hover {
-      opacity: 0;
-}
-.app__work-items {
-    width: 270px;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in-out;
 }
 
-.app__work-items:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    }
-
-@media screen and (min-width: 2000px) {
-    .app__work-items:hover {
-      width: 470px;
-      padding: 1.25rem;
-      border-radius: 0.75rem;
-    }
+.app__work-hovers:hover {
+  opacity: 1;
 }
-@media screen and (max-width: 300px) {
-    .app__work-items:hover {
-      width: 100%;
-      margin: 1rem;
-    }
-  }
-
-
-  .app__work-portfolios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 100%;
-  } 
-    

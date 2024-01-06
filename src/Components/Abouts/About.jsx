@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import ME from '../../assests/charan3.jpg'
+import ME from '../../assests/charan2.jpg'
 import {BiAward} from 'react-icons/bi'
 import {BsPencil} from 'react-icons/bs'
 import {AiOutlineFolder} from 'react-icons/ai'
@@ -39,7 +39,7 @@ const about = () => {
               <AiOutlineFolder className='about__icon'/>
               <a href="#portfolio">
                 <h5>Projects</h5>
-                <small>5+ Projects</small>
+                <small>10+ Projects</small>
               </a>
             </article>
 
@@ -57,8 +57,8 @@ const about = () => {
             transition={{ duration: 2 }}
             >
             <p>
-              Hey! I am a developer, who is passionate about Artificial intelligence and i love to develop, work and learn about AI technologies. 
-              Digital art and 3D modelling also has my attention.
+            Hey! I am a developer, who is passionate about Artificial intelligence and i love to develop, 
+            work and learn about AI technologies. Digital art and 3D modelling also has my attention.
             </p>
 
             <a href='#contacts' className='btn btn-primary'>Let's Talk</a>

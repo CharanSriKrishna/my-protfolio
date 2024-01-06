@@ -1,140 +1,57 @@
-import React from 'react'
-import './services.css'
-import {BsCheck} from 'react-icons/bs'
+import React, { useState } from 'react';
+import './services.css';
+import { BsCheck } from 'react-icons/bs';
+import {service_data} from "./data"
 
-const services = () => {
+const Service = ({ index, title, details, activeIndex, setActiveIndex }) => {
+  const handleFlip = () => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
   return (
-    <section id ='work'>
+    <article
+      className={`service ${index === activeIndex ? 'flipped' : ''}`}
+      onClick={handleFlip}
+    >
+      <div className="service__face service__face--front">
+        <div className="service__head">
+          <h3>{title}</h3>
+        </div>
+      </div>
+      <div className="service__face service__face--back">
+        <ul className='service__list'>
+          {details.map((detail, idx) => (
+            <li key={idx}>
+              <BsCheck className='service__list-icon' />
+              <p>{detail}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </article>
+  );
+};
+
+const Services = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  return (
+    <section id='work'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
       <div className="container services__container">
-
-
-        <article className='service'>
-          <div className="service__head">
-            <h3>Software Development</h3>
-          </div>
-
-          <ul className='service__list'>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Have experience in Python, Java, C</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Provide solution for problems</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Make creative and inovative solution</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Able to test and decode codes</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Have experience in SQL</p>
-            </li>
-          </ul>
-        </article>
-
-
-        <article className='service'>
-          <div className="service__head">
-            <h3> Machine Learning </h3>
-          </div>
-
-          <ul className='service__list'>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Provide solutions to Real World problems</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Understanding of different ML algorithms</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Have Experience with R and Python</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Can make custom Models</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Perform Statistic analysis on data</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className='service'>
-          <div className="service__head">
-            <h3>Digital Work</h3>
-          </div>
-
-          <ul className='service__list'>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Experiance with 2D artworks</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>I Make landscape art works</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Have experiance with blender</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Able to make simple animations</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Make 3D objects with blender</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Design 2D Character</p>
-            </li>
-          </ul>
-        </article>
-
-        {/*<article className='service'>
-          <div className="service__head">
-            <h3>Game Development</h3>
-          </div>
-
-          <ul className='service__list'>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Have experience with Unreal Engine</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Code using C++</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Make Simple Games</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Able to use Pygame</p>
-            </li>
-            <li> 
-              <BsCheck className='service__list-icon'/>
-              <p>Can make 3D objects</p>
-            </li>
-          </ul>
-  </article>*/}
-
+        {service_data.map((service, index) => (
+          <Service
+            key={index}
+            index={index}
+            {...service}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+          />
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default services
+export default Services;
